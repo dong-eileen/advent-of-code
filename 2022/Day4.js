@@ -8,7 +8,7 @@ const parseSectionAssignmentToList = assignmentString => {
 
 //#region Part 2 Exclusive
 
-// returns if assignment 1 is entirely included in assignment 2
+// returns if even one section of assignment 1 is included in assignment 2
 const isAssignmentInOther = (assignment1, assignment2) => {
     return assignment1[0] >= assignment2[0] && assignment1[0] <= assignment2[1];
 }
