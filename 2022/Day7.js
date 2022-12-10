@@ -42,7 +42,7 @@ class Node {
             const total = this.subNodes.reduce((sum, curr) => {
                 return sum + +curr.getTotalSize();
             }, 0);
-            this.size = total; // a stupid way to save on calculation but doing it because this function is only ever called at the end
+            this.size = total; // poor man's way of caching but doing it because this function is only ever called at the end
             return total;
         }
     }
