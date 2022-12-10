@@ -72,8 +72,6 @@ const solution = (fileReader, isPart2) => {
     });
 }
 
-//#endregion
-
 try {
     var fileReader = readline.createInterface({
         input: fs.createReadStream('input.txt')
