@@ -48,14 +48,6 @@ const calculateScenicScore = (treeGrid, row, col) => {
             r++;
         } while (r < treeGrid.length-1 && treeGrid[r][col] < height);
     }
-
-    if (row === 3 && col === 2) {
-        console.log(height);
-        console.log('top'+ numValidTreesToTop);
-        console.log('bottom'+numValidTreesToBottom);
-        console.log('right'+numValidTreesToRight);
-        console.log('left'+numValidTreesToLeft);
-    }
     return numValidTreesToBottom * numValidTreesToTop * numValidTreesToLeft * numValidTreesToRight;
 }
 
